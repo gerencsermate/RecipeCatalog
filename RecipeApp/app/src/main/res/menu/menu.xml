@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/editRecipe"
+            android:icon="@drawable/ic_edit"
+            android:title="@string/editrecipe"
+            />
+        <item
+            android:id="@+id/deleteRecipe"
+            android:icon="@drawable/ic_delete"
+            android:title="@string/deleterecipe" />
+
+        <item
+            android:id="@+id/shareRecipe"
+            android:icon="@drawable/ic_delete"
+            android:title="@string/share_recipe"/>
+    </group>
+
+
+</menu>

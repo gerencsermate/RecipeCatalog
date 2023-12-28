@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RecipeApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="categories">Kategóriák</string>
+    <string name="soups">Levesek</string>
+    <string name="main_courses">Főételek</string>
+    <string name="desserts">Desszertek</string>
+    <string name="difficulty">Nehézség:</string>
+    <string name="prepTime">Elkészítési idő:</string>
+    <string name="recipeName">Étel neve:</string>
+    <string name="recipePrepTime">Elkészítési idő(perc):</string>
+    <string name="editRecipeTitle">Recept szerkesztése</string>
+    <string name="newDesciption">Elkészítés:</string>
+    <string name="newrecipe">Új recept felvétele</string>
+    <string name="editrecipe">Recept szerkesztése</string>
+    <string name="deleterecipe">Recept törlése</string>
+    <string name="share_recipe">Recept megosztása</string>
+</resources>

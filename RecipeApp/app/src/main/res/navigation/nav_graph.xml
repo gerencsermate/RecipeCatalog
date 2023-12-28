@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="hu.bme.aut.android.recipeapp.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_recipeListFragment"
+            app:destination="@id/recipeListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeListFragment"
+        android:name="hu.bme.aut.android.recipeapp.fragments.RecipeListFragment"
+        android:label="fragment_soup"
+        tools:layout="@layout/fragment_recipe_list" >
+        <action
+            android:id="@+id/action_recipeListFragment_to_recipeDetailsFragment"
+            app:destination="@id/recipeDetailsFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_recipeListFragment_to_newRecipeFragment"
+            app:destination="@id/newRecipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editRecipeFragment"
+        android:name="hu.bme.aut.android.recipeapp.fragments.EditRecipeFragment"
+        android:label="fragment_edit_recipe"
+        tools:layout="@layout/fragment_edit_recipe">
+        <action
+            android:id="@+id/action_editRecipeFragment_to_recipeListFragment"
+            app:destination="@id/recipeListFragment"
+            app:popUpTo="@id/recipeListFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailsFragment"
+        android:name="hu.bme.aut.android.recipeapp.fragments.RecipeDetailsFragment"
+        android:label="fragment_recipe_details"
+        tools:layout="@layout/fragment_recipe_details" >
+        <action
+            android:id="@+id/action_recipeDetailsFragment_to_recipeListFragment"
+            app:destination="@id/recipeListFragment"
+            app:popUpTo="@id/recipeListFragment"/>
+        <action
+            android:id="@+id/action_recipeDetailsFragment_to_editRecipeFragment"
+            app:destination="@id/editRecipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newRecipeFragment"
+        android:name="hu.bme.aut.android.recipeapp.fragments.NewRecipeFragment"
+        android:label="fragment_new_recipe2"
+        tools:layout="@layout/fragment_new_recipe" >
+        <action
+            android:id="@+id/action_newRecipeFragment_to_recipeListFragment"
+            app:destination="@id/recipeListFragment"
+            app:popUpTo="@id/recipeListFragment"/>
+    </fragment>
+</navigation>
